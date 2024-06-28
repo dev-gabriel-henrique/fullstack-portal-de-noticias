@@ -19,6 +19,7 @@
 
 #secondary {
   padding-block: 1.4rem;
-  border: solid 1px --stroke-color;
+  border: solid 1px var(--stroke-color);
   border-inline: none;
+  justify-content: space-between;
 }
