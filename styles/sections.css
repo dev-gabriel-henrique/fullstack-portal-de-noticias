@@ -6,21 +6,22 @@ section header {
   a {
     justify-self: end;
     align-items: center;
-    gap: .8rem;
+    gap: 0.8rem;
   }
 
-    span {
-      background-image: url(../assets/icons/ArrowRight.svg);
-      width: 1.6rem;
-      height: 1.6rem;
-    }
+  span {
+    background-image: url(../assets/icons/ArrowRight.svg);
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 
-    &:hover span {
-      background-image: url(../assets/icons/ArrowRight-hover.svg);
-    }
+  &:hover span {
+    background-image: url(../assets/icons/ArrowRight-hover.svg);
+  }
 }
 
 #featured {
+  grid-area: featured;
   img {
     height: 100%;
     object-fit: cover;
@@ -35,32 +36,29 @@ section header {
       inset: 0;
       top: 50%;
 
-      background: linear-gradient(
-        180deg,
-        transparent 0%,
-        #020617 100%
-      );
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
     }
 
-figcaption {
-  position: absolute;
-  bottom: 0;
+    figcaption {
+      position: absolute;
+      bottom: 0;
 
-  padding: 2.4rem;
+      padding: 2.4rem;
 
-  &:has(.text-lg) {
-    padding: 1.2rem;
+      &:has(.text-lg) {
+        padding: 1.2rem;
+      }
+
+      h2 {
+        margin-top: 0.8rem;
+      }
+    }
   }
-
-  h2 {
-    margin-top: .8rem;
-  }
-}
-}
 }
 
 #weekly {
-  &>div {
+  grid-area: weekly;
+  & > div {
     grid-template-columns: repeat(4, 29.2rem);
   }
   img {
@@ -72,13 +70,45 @@ figcaption {
 
     .content-tag {
       position: absolute;
-      top: .8rem;
-      left: .8rem;
+      top: 0.8rem;
+      left: 0.8rem;
     }
 
     p {
-      margin-top: .8rem;
+      margin-top: 0.8rem;
       font-weight: 800;
     }
+  }
+}
+
+#ai {
+  grid-area: ai;
+
+  img {
+    width: 17.6rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-block: 0.8rem;
+  }
+}
+
+#aside {
+  grid-area: aside;
+}
+
+#more {
+  margin-top: 3.2rem;
+
+  img {
+    width: 7.2rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-top: 0.8rem;
   }
 }
