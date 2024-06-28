@@ -50,3 +50,19 @@ img {
   padding-inline: 3.2rem;
   margin-inline: auto;
 }
+
+main {
+  margin-top: 4rem;
+}
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: .4rem .8rem;
+  border-radius: 4px;
+  font: 500 1rem/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  box-shadow: 0 .4rem 1.6rem rgba(2, 6, 23, 0.251);
+}
