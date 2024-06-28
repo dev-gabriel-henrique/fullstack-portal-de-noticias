@@ -26,6 +26,10 @@ figcaption {
 
   padding: 2.4rem;
 
+  &:has(.text-lg) {
+    padding: 1.2rem;
+  }
+
   h2 {
     margin-top: .8rem;
   }
